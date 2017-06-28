@@ -1,9 +1,7 @@
 # wordpress-lightbox-gallery
-This is a simple WordPress plugin that replaces the default behavior of WordPress' gallery shortcode to open photos in a lightbox.
+This is a simple WordPress plugin that replaces the default behavior of WordPress' gallery shortcode to open photos in a lightbox. At this time the lightbox gallery only works for images.
 
 It utilizes the [Featherlight](https://noelboss.github.io/featherlight/) jQuery plugin and [Gallery extension](https://noelboss.github.io/featherlight/gallery.html) created by Noël Bossart.
-
-> At this time the lightbox gallery only works for images.
 
 
 ## Installation
@@ -26,7 +24,7 @@ On the "Edit Gallery" page you can drag and drop images to rearrange them, add c
 
 
 ## Theme Customization
-At this time, the only customization options available are through CSS overrides. You can find the plugin's CSS at `/lightbox-photo-gallery/css/theme.css`, although you should only use this for reference. *Any changes you want to make should be made in your own theme's CSS file or you risk losing your customizations when the plugin is updated.*
+At this time, the only customization options available are through CSS overrides. You can find the plugin's CSS at `/lightbox-photo-gallery/css/theme.css`, although you should only use this for reference. **Any changes you want to make should be made in your own theme's CSS file or you risk losing your customizations when the plugin is updated.**
 
 You will need to either use a more specific selector or use the `!important` rule for any overrides:
 ```
@@ -43,7 +41,7 @@ You will need to either use a more specific selector or use the `!important` rul
 
 
 ## Uninstallation
-If you choose you no longer wish to use the plugin, simply deactivate and then delete it in the Plugins section in WordPress. Upon installation, the original WordPress gallery shortcode will be restored, leaving your content intact. Doing this reverts to how the original gallery shortcode operates, so your gallery images will no longer open in a lightbox and may look slightly different.
+If you choose you no longer wish to use the plugin, simply deactivate and then delete it in the Plugins section in WordPress. After uninstalling, the original WordPress gallery shortcode will be restored, leaving your content intact. Doing this reverts to how the original gallery shortcode operates, so your gallery images will no longer open in a lightbox and may look slightly different.
 
 ## Questions? Comments? Issues?
 You can use the Issues tab at the top of the page to leave questions, bug lists, or feature requests. You can also tweet any comments at [@praliedutzel](http://twitter.com/praliedutzel). Thanks for checking this out!
