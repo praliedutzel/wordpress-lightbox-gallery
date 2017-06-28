@@ -1,0 +1,92 @@
+/*-------------------------------------------------------------------------------*/
+/*---LIGHTBOX PHOTO GALLERY THEME STYLES-----------------------------------------*/
+/*-------------------------------------------------------------------------------*/
+
+.lbpg-gallery {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.lbpg-gallery:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.lbpg-gallery__item {
+    width: 100%;
+    padding: 1em;
+    float: left;
+}
+
+@media screen and (min-width: 48em) and (max-width: 64em) {
+    .lbpg-gallery__item { width: 50%; }
+}
+
+@media screen and (min-width: 64em) {
+    .lbpg-gallery[data-columns="2"] .lbpg-gallery__item { width: 50%; }
+    .lbpg-gallery[data-columns="3"] .lbpg-gallery__item { width: 33.333%; }
+    .lbpg-gallery[data-columns="4"] .lbpg-gallery__item { width: 25%; }
+    .lbpg-gallery[data-columns="5"] .lbpg-gallery__item { width: 20%; }
+    .lbpg-gallery[data-columns="6"] .lbpg-gallery__item { width: 16.668%; }
+    .lbpg-gallery[data-columns="7"] .lbpg-gallery__item { width: 14.286%; }
+    .lbpg-gallery[data-columns="8"] .lbpg-gallery__item { width: 12.5%; }
+    .lbpg-gallery[data-columns="9"] .lbpg-gallery__item { width: 11.111%; }
+}
+
+.lgpg-gallery__link {
+    display: block;
+    color: inherit;
+    text-align: center;
+}
+
+.lbpg-gallery__thumbnail {
+    max-width: 100%;
+    margin: 0 auto;
+    display: block;
+}
+
+.lbpg-gallery__caption {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-size: 0.875em;
+    font-style: italic;
+}
+
+
+/* Style overrides for the Featherlight modal */
+.featherlight .featherlight-content {
+    padding: 40px 40px 0;
+    border-bottom-width: 40px;
+}
+
+.featherlight .featherlight-close-icon {
+    margin: 0;
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+}
+
+.featherlight-next,
+.featherlight-previous {
+    background-color: transparent;
+    width: 40px;
+    top: 40px;
+    right: 0;
+    left: auto;
+}
+
+.featherlight-previous {
+    right: auto;
+    left: 0;
+}
+
+.featherlight-next span,
+.featherlight-previous span {
+    width: 100%;
+    display: block;
+    color: #333;
+    font-size: 40px;
+    text-shadow: none;
+}
